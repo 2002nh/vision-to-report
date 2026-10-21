@@ -1,0 +1,12 @@
+Repository name: vision-to-report
+
+Short GitHub description (copy/paste):
+A small Python project connecting YOLO detections with Hugging Face Transformers to create readable visual inspection notes.
+
+Suggested topics:
+computer-vision, yolo, transformers, huggingface, pytorch, python, llm, object-detection
+
+CV project bullet — use ONLY after you have run and reviewed the code:
+Built a Python prototype that converts YOLO detection results into structured inspection notes and optionally rewrites them using a Hugging Face Transformer, with confidence filtering and unit tests.
+
+Do not claim custom defect-model training, measured accuracy, production deployment, or implemented cloud infrastructure unless you actually do those things.

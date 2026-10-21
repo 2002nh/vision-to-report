@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision-to-report"
+version = "0.1.0"
+description = "A reproducible demo turning object detections into human-readable inspection notes."
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Narges Hosseinzadeh"}]
+dependencies = []
+
+[project.optional-dependencies]
+llm = ["torch>=2.2", "transformers>=4.41,<6", "sentencepiece>=0.2"]
+yolo = ["ultralytics>=8.2"]
+all = ["torch>=2.2", "transformers>=4.41,<6", "sentencepiece>=0.2", "ultralytics>=8.2"]
+
+[project.scripts]
+vision-report = "inspection_report.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
